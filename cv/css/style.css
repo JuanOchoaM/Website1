@@ -1,0 +1,219 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    box-shadow:30px 0px 100px #5F536C; 
+    background-color: #6D7893;
+    font-family: 'Playfair Display';
+    color:#001067;
+  
+}
+
+#headimg {
+    height: 10%;
+    position: absolute;
+    width: 20%; /* Adjust the size of the cutout as needed */
+    height: auto;
+    margin: 175px 100px;
+    border-width: 10%; /* Create a circular shape */
+    overflow: hidden; /* Hide parts of the image outside the circle */
+
+ 
+}
+
+
+
+main {
+    flex-grow: 1;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    background: radial-gradient(circle, #5F536C, #003366);
+    font-style:italic;
+    font-size: large;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 0 0 30px #5F536C; 
+
+}
+
+nav a {
+    text-decoration: none;
+    color: wheat;
+    background: linear-gradient(to right,#003366,);
+    font-size: 16px;
+    transition: font-size 0.9s ease-in-out; 
+
+}
+nav a:hover::after{
+    content: "!";
+    margin-left: 0px;
+
+}
+nav a:hover {
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+footer {
+    background: radial-gradient(circle, #5F536C, #003366);
+    color: #fff; 
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 16px;
+    transition: font-size 0.9s ease-in-out; 
+}
+footer a:hover {
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.section-one {
+    background-color: #C51A1F;
+    padding: 0;
+
+}
+
+.section-two {
+padding: 0;
+
+}
+
+.section-three {
+    background-color: black;
+    padding: 0;
+
+}
+
+a {
+    color:#003366;
+    text-decoration: none;
+    font-size: 16px;
+    transition: font-size 0.9s ease-in-out; 
+
+}
+a:hover {
+    color: honeydew;
+    font-size: 17px;
+    box-shadow: 10px 10px 10px #5F536C; 
+
+}
+
+h3 {
+    box-shadow: 0 0 20px #504A51; 
+    font-family: 'Karla', sans-serif;
+    color: wheat;
+    background-color: #504A99;
+    font-size: x-large;
+    
+}
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.circle-cutout {
+    width: 200px; /* Adjust the size of the cutout as needed */
+    height: 270px;
+    border-radius: 90%; /* Create a circular shape */
+    overflow: hidden; /* Hide parts of the image outside the circle */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+}
+
+.circle-cutout img{
+    
+    box-shadow:10px 3px 10px #5F536C; 
+    width:100%;
+    height:auto;
+    
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 0.3; }
+}
+
+hr{
+    box-shadow: 0 5px 20px black; 
+    border: none;
+    height: 100px;
+    background: url('https://y2w9c4y8.stackpathcdn.com/showimg_hli107_tablet.jpg') repeat-x center;
+    background-position: top, bottom;
+    opacity: 0.9;
+    margin: 20px 20px;
+}
+
+
+
+
+header {
+    margin: 0px 5px;
+    padding: 0;
+}
+
+header hr {
+
+    box-shadow: 0 5px 20px black; 
+    border: none;
+    height: 100px;
+    background: url('https://climate.nasa.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbjRyIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0a7f9ec62ad04559ccea084556300e01789e456a/9827327865_98e0f0dc2d_o.jpg') repeat-x center;
+    background-position: top, bottom;
+    opacity: 0.9;
+    margin: 2px 0px;
+}
+
+.triple-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    max-width: 300px;
+    max-height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 100px 0px 100px 0px;
+    padding: 1px 1px;
+    border: 2px;
+    
+    
+}
+
+.container {
+    max-width: 300px;
+    max-height: 900px;
+    border: 0px;
+    padding: 0px 0px;
+}
+
+dl {
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: space-between; /* Adjust this for your desired alignment */
+  align-items: center;
+}
+
+dl li {
+    flex: 0 0 calc(33.33% - 10px); /* Adjust the width and margin as needed */
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
